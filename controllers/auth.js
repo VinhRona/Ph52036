@@ -3,6 +3,7 @@ import bcrypt from 'bcryptjs'
 import { ValidateRegister } from "../validate/auth.js"
 export const Register = async(req,res)=>{
     try {
+        // hihi
         const body = req.body
         const {email,password} = body
         const {error}  = ValidateRegister.validate(body,{abortEarly:false})
